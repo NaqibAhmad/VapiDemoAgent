@@ -24,7 +24,7 @@ class VapiWebSocketAgent:
     def __init__(self, assistant_id: str):
         """Initialize the agent with required credentials and configuration."""
         # Validate environment variables
-        self.vapi_token = "c0c202b9-8f50-4956-b90e-02d48090d5bf"
+        self.vapi_token = os.getenv("VAPI_API_KEY")
         self.gemini_api_key = "AIzaSyCoIFX3XhR18Glr1Xj0NhsXMZxpddwDx7E"
         
         if not self.vapi_token:
