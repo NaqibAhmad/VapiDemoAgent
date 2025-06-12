@@ -1,0 +1,16 @@
+[project]
+name = "posdemoagent"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "anthropic>=0.54.0",
+    "dotenv>=0.9.9",
+    "fastapi>=0.115.12",
+    "google-genai>=1.19.0",
+    "openai>=1.86.0",
+    "twilio>=9.6.2",
+    "uvicorn>=0.34.3",
+    "vapi-server-sdk>=1.5.0",
+]
