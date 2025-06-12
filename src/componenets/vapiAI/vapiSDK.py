@@ -25,7 +25,7 @@ class VapiWebSocketAgent:
         """Initialize the agent with required credentials and configuration."""
         # Validate environment variables
         self.vapi_token = os.getenv("VAPI_API_KEY")
-        self.gemini_api_key = "AIzaSyCoIFX3XhR18Glr1Xj0NhsXMZxpddwDx7E"
+        self.gemini_api_key = os.getenv("GOOGLE_API_KEY")
         
         if not self.vapi_token:
             raise ValueError("VAPI_API_KEY environment variable is required")
